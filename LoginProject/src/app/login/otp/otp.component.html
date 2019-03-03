@@ -1,0 +1,15 @@
+
+<!-- <p>
+    otp works!
+  </p>
+   -->
+   <h2 style="text-align: center;margin-top:4%">Time-Based One-Time Password Manager </h2>
+<div style="margin-left:42%; margin-top:4% ">
+<form [formGroup]="otpform" (ngSubmit)="otpdataToHome(otpform.value)">
+    <label for="username">Fill the correct otp code </label>
+      <div class="form-group">
+      <input type="text" formControlName='otpCode' name='otpCode' class="form-control" placeholder="otp" required>
+      </div>
+      <button type="submit" class="btn btn-primary" >Ok</button>
+      </form>
+    </div>
